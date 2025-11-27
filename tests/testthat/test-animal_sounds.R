@@ -6,5 +6,15 @@ test_that("animal_sounds produces expected strings", {
 
 test_that("animal_sounds handles invalid input", {
   expect_error(animal_sounds(c("dog", "cat"), "woof"),
-               regexp = "`animal ` must be a character vector of length 1")
+               # class can only be used when using cli package for stop / warn
+               class = "error_not_string_or_wrong_length")
+})
+
+test_that("error message for invalid output", {
+  expect_snapshot(animal_sounds(c("dog", "cat"), "woof"),
+                  error = TRUE)
+})
+
+test_that("animals can make no sound", {
+  expect_equal(animal_sounds("giraffe"), "The giraffe makes no sound.")
 })

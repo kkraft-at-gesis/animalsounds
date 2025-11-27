@@ -10,18 +10,25 @@
 #'
 #' @examples
 #' animal_sounds("dog", "woof")
-animal_sounds <- function(animal, sound) {
+animal_sounds <- function(animal, sound = NULL) {
 
   check_arg(animal)
-  check_arg(sound)
 
-  paste0("The ", animal, " says ", sound, "!")
+  if (is.null(sound)) {
+    paste0("The ", animal, " makes no sound.")
+  } else{
+
+    check_arg(sound)
+
+    paste0("The ", animal, " says ", sound, "!")
+  }
 }
 
 check_arg <- function(argument, n = 1) {
   if (!rlang::is_character(argument, n = n)) {
     cli_abort(c("{.var {rlang::caller_arg(argument)} } must be a character vector of length {n}.",
                 "i" = "It was {.type {argument}} of length {length(argument)} instead."),
-              call = rlang::caller_env())
+              call = rlang::caller_env(),
+              class = "error_not_string_or_wrong_length")
   }
 }
