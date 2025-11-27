@@ -4,7 +4,7 @@
 \alias{animal_sounds}
 \title{Prints the Sound an Animal Makes}
 \usage{
-animal_sounds(animal, sound)
+animal_sounds(animal, sound = NULL)
 }
 \arguments{
 \item{animal}{A character vector of length 1}
