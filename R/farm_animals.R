@@ -4,7 +4,7 @@
 #'
 #' @format A data frame with five rows and two columns:
 #' \describe{
-#' \item{animal}{A string giving the animal name}
-#' \item{sound}{A string giving the animal sound}
+#' \item{`animal`}{A string giving the animal name}
+#' \item{`sound`}{A string giving the animal sound}
 #' }
 "farm_animals"
