@@ -32,16 +32,3 @@ check_arg <- function(argument, n = 1) {
               class = "error_not_string_or_wrong_length")
   }
 }
-
-#' Head of a Data Frame
-#'
-#' Slices a data frame
-#'
-#' @param data A data frame
-#' @param n An integer
-#'
-#' @export
-first_n <- function(data, n) {
-  data |>
-    dplyr::slice_head(n = n)
-}
