@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/kkraft-at-gesis/animalsounds/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kkraft-at-gesis/animalsounds/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of animalsounds is to print out a sentence that shows what kind
