@@ -1,0 +1,9 @@
+pandoc: 3.1.11
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles:
+  animalsounds: animalsounds.html
+last_built: 2025-11-28T11:05Z
+urls:
+  reference: https://kkraft-at-gesis.github.io/animalsounds/reference
+  article: https://kkraft-at-gesis.github.io/animalsounds/articles
